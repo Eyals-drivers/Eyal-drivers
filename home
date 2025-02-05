@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>אייל פתרונות נסיעה</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap');
+        body {
+            margin: 0;
+            font-family: 'Rubik', sans-serif;
+            direction: rtl;
+        }
+        .navbar {
+            background-color: black;
+            overflow: hidden;
+            text-align: center;
+        }
+        .navbar a {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .navbar a:hover {
+            background-color: gray;
+            border-radius: 25px;
+            color: white;
+        }
+        .top-section {
+            background-color: lightgray; /* Light gray background */
+            height: 50vh;
+            color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 50%;
+        }
+        h1 {
+            font-size: 3.5em;
+            font-weight: bold;
+            text-decoration: underline;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 2em;
+            margin-top: 0;
+        }
+        .bottom-section {
+            background-color: lightblue; /* Light blue background */
+            padding: 20px;
+            min-height: 50vh;
+            text-align: center;
+        }
+        h2 {
+            font-size: 2.5em;
+            font-weight: bold;
+        }
+        .about-text {
+            font-size: 1.2em;
+            font-weight: normal;
+            white-space: pre-line;
+            text-align: center; /* Center align text */
+        }
+        .contact-note {
+            font-size: 0.8em;
+            color: gray;
+            margin-top: 10px;
+        }
+        .contact-buttons {
+            margin-top: 20px;
+        }
+        .contact-buttons a {
+            display: inline-block;
+            margin: 10px;
+            padding: 15px 25px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+        }
+        .contact-buttons a.phone {
+            background-color: #2196F3;
+        }
+        .contact-buttons a.whatsapp {
+            background-color: #25D366;
+        }
+        .separator-line {
+            border-top: 2px solid black;
+            width: 100%;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#home">בית</a>
+        <a href="#about">אודות</a>
+        <a href="#contact">יצירת קשר</a>
+    </div>
+    <div class="top-section" id="home">
+        <div class="container">
+            <h1>אייל פתרונות נסיעה</h1>
+            <p>מה שנוח ללקוח.</p>
+        </div>
+    </div>
+    <div class="bottom-section" id="about">
+        <h2>אודות</h2>
+        <p class="about-text">ברוכים הבאים לחברת ההסעות שלנו!
+        אנו מציעים שירותי הסעה מקצועיים ואמינים לכל מטרה – 
+        מנסיעות פרטיות ועד הסעות מאורגנות לבתי ספר,
+        טיולים ואירועים.
+        ברשותנו צי רכבים מגוון הכולל מוניות, מיניבוסים ואוטובוסים, 
+        המאפשרים לנו להתאים את השירות לצורכי הלקוחות שלנו,
+        בין אם מדובר בנסיעה בודדת או בהסעות קבוצתיות.
+        אנו מתחייבים למחירים הטובים ביותר ולשירות אדיב, נוח ובטוח.
+        צוות הנהגים המנוסה שלנו דואג להעניק חוויית נסיעה ברמה הגבוהה ביותר, תוך הקפדה על מקצועיות,
+        עמידה בזמנים ונוחות מירבית.
+        צרו איתנו קשר להזמנת נסיעה ותיהנו משירות הסעות איכותי ואמין!</p>
+        <div class="separator-line"></div>
+    </div>
+    <div class="bottom-section" id="contact">
+        <h2>יצירת קשר</h2>
+        <p class="contact-note">*לא בשבתות וחגים*</p>
+        <div class="contact-buttons">
+            <a href="tel:+972545510276" class="phone">📞 חיוג</a>
+            <a href="https://wa.me/972545510276" class="whatsapp">💬 צ'אט בוואטסאפ</a>
+        </div>
+    </div>
+</body>
+</html>
