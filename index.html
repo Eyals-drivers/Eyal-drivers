@@ -15,6 +15,10 @@
             background-color: black;
             overflow: hidden;
             text-align: center;
+            position: fixed; /* Add this line */
+            top: 0; /* Add this line */
+            width: 100%; /* Add this line */
+            z-index: 1000; /* Add this line */
         }
         .navbar a {
             display: inline-block;
@@ -32,12 +36,30 @@
         .top-section {
             background-color: lightgray; /* Light gray background */
             height: 50vh;
-            color: black;
+            color: white; /* Change text color to white for better contrast */
             display: flex;
             align-items: center;
             justify-content: center;
             padding: 20px;
             text-align: center;
+            margin-top: 60px; /* Add this line */
+            background-image: url('https://images.pexels.com/photos/462867/pexels-photo-462867.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); /* Add background image */
+            background-size: cover;
+            background-position: center;
+            position: relative; /* Add this line */
+        }
+        .top-section::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+        }
+        .top-section .container {
+            position: relative; /* Add this line */
+            z-index: 1; /* Add this line */
         }
         .container {
             max-width: 50%;
@@ -115,7 +137,7 @@
         <h2>אודות</h2>
         <p class="about-text">ברוכים הבאים לחברת ההסעות שלנו!
         אנו מציעים שירותי הסעה מקצועיים ואמינים לכל מטרה – 
-        מנסיעות פרטיות ועד הסעות מאורגנות לבתי ספר,
+        מנסיעות פרטיות ועד הסעות לנתב"ג, בתי ספר,
         טיולים ואירועים.
         ברשותנו צי רכבים מגוון הכולל מוניות, מיניבוסים ואוטובוסים, 
         המאפשרים לנו להתאים את השירות לצורכי הלקוחות שלנו,
